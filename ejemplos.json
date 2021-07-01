@@ -1,0 +1,25 @@
+{
+    "name": "Salsa de Arandanos",
+    "description": "Esto es un arándano",
+    "fabricationDate": "2020-02-12T23:00:00.000Z",
+    "expirationDate": "2021-09-09T23:00:00.000Z",
+    "batchNumber": "AS12FS",
+    "ingredients": ["arándano", "Azucar", "vinagre"],
+    "nutritionalInfo": [{"energy": 282, "proteins": 122, "carbs": 322, "fats": 102}],
+    "weight": 20,
+    "price": 1.2,
+    "stock": 19
+}
+
+{
+    "name": "Salsa de Tomate",
+    "description": "Esto es un tomate",
+    "fabricationDate": "2020-02-12T23:00:00.000Z",
+    "expirationDate": "2021-09-09T23:00:00.000Z",
+    "batchNumber": "AS12FS",
+    "ingredients": ["tomate", "Azucar", "vinagre"],
+    "nutritionalInfo": [{"energy": 28, "proteins": 12, "carbs": 32, "fats": 10}],
+    "weight": 250,
+    "price": 123,
+    "stock": 19
+}

@@ -6,13 +6,13 @@ export const deleteRouter = express.Router();
 deleteRouter.delete('/products', async (req, res) => {
   if (!req.query.name) {
     return res.status(400).send({
-      error: 'A title must be provided',
+      error: 'A name must be provided',
     });
   }
 
   try {
     const product =
-      await Product.findOneAndDelete({title: req.query.name.toString()});
+      await Product.findOneAndDelete({name: req.query.name.toString()});
 
     if (!product) {
       return res.status(404).send();

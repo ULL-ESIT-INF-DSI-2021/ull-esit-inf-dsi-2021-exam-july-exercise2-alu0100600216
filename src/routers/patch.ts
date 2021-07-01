@@ -24,7 +24,7 @@ patchRouter.patch('/products', async (req, res) => {
 
   try {
     const product =
-    await Product.findOneAndUpdate({title: req.query.name.toString()}, req.body, {
+    await Product.findOneAndUpdate({name: req.query.name.toString()}, req.body, {
       new: true,
       runValidators: true,
     });
