@@ -10,8 +10,7 @@ interface ProductInterface extends Document {
   nutritionalInfo: [{energy: number, proteins: number, carbs: number, fats: number}],
   weight: number,
   price: number,
-  stock: number,
-  body: string,
+  stock: number
 }
 
 const ProductSchema = new Schema({
