@@ -10,7 +10,8 @@ patchRouter.patch('/products', async (req, res) => {
     });
   }
 
-  const allowedUpdates = ['name','description','fabricationDate','expirationDate','batchNumber','ingredients','nutritionalInfo','weight','price','stock']
+  //const allowedUpdates = ['name','description','fabricationDate','expirationDate','batchNumber','ingredients','nutritionalInfo','weight','price','stock'];
+  const allowedUpdates = ['name','description','fabricationDate','expirationDate','batchNumber','ingredients','weight','price','stock'];
   const actualUpdates = Object.keys(req.body);
   const isValidUpdate =
     actualUpdates.every((update) => allowedUpdates.includes(update));
@@ -39,7 +40,8 @@ patchRouter.patch('/products', async (req, res) => {
 });
 
 patchRouter.patch('/products/:id', async (req, res) => {
-  const allowedUpdates = ['name','description','fabricationDate','expirationDate','batchNumber','ingredients','nutritionalInfo','weight','price','stock']
+  //const allowedUpdates = ['name','description','fabricationDate','expirationDate','batchNumber','ingredients','nutritionalInfo','weight','price','stock'];
+  const allowedUpdates = ['name','description','fabricationDate','expirationDate','batchNumber','ingredients','weight','price','stock'];
   const actualUpdates = Object.keys(req.body);
   const isValidUpdate =
       actualUpdates.every((update) => allowedUpdates.includes(update));
