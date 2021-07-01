@@ -7,7 +7,7 @@ interface ProductInterface extends Document {
   expirationDate: string,
   batchNumber: string,
   ingredients: string[],
-  //nutritionalInfo: [{energy: number, proteins: number, carbs: number, fats: number}],
+  nutritionalInfo: [{energy: number, proteins: number, carbs: number, fats: number}],
   weight: number,
   price: number,
   stock: number
@@ -53,9 +53,9 @@ const ProductSchema = new Schema({
     required: true,
   },
 
-  //nutritionalInfo: {
-  //  type: [{energy: Number, proteins: Number, carbs: Number, fats: Number}]
-  //},
+  nutritionalInfo: {
+    type: [{energy: Number, proteins: Number, carbs: Number, fats: Number}]
+  },
   
   weight: {
     type: Number,
